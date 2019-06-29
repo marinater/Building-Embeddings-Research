@@ -1,0 +1,160 @@
+{
+  "id": "f4aa6992-d2b0-46c0-9bc0-1edf9044e54c",
+  "version": "2.0",
+  "name": "Webscraper",
+  "url": "http://www.ultimateplans.com",
+  "tests": [{
+    "id": "d13f3011-1257-4344-a965-3d8f82c2babb",
+    "name": "Plan Number Collector",
+    "commands": [{
+      "id": "9fb674bf-ffe0-4a25-ab86-8229787f63ee",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e003408f-25e4-4311-a595-34beb200b6ec",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1034",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "52f6c140-6e3c-4c75-a533-590884fcc8a0",
+      "comment": "",
+      "command": "click",
+      "target": "id=m_ctlViewSearch_m_hlinkSearch",
+      "targets": [
+        ["id=m_ctlViewSearch_m_hlinkSearch", "id"],
+        ["linkText=SEARCH", "linkText"],
+        ["css=#m_ctlViewSearch_m_hlinkSearch", "css:finder"],
+        ["xpath=//a[contains(text(),'SEARCH')]", "xpath:link"],
+        ["xpath=//a[@id='m_ctlViewSearch_m_hlinkSearch']", "xpath:attributes"],
+        ["xpath=//table[@id='QUICKSEARCH-container']/tbody/tr/td/table/tbody/tr/td/table/tbody/tr[12]/td/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, \"javascript:GoToPage('Profiles/Customer/Search','15030','0');\")]", "xpath:href"],
+        ["xpath=//div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'SEARCH')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7b05f389-3d05-4e00-bf3b-27583332de73",
+      "comment": "",
+      "command": "times",
+      "target": "1659",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "66d7bbe7-dc47-4daf-9d9a-ee8b3ed98194",
+      "comment": "",
+      "command": "click",
+      "target": "id=m_ctlViewHomePlans_m_btnNext",
+      "targets": [
+        ["id=m_ctlViewHomePlans_m_btnNext", "id"],
+        ["name=m_ctlViewHomePlans:m_btnNext", "name"],
+        ["css=#m_ctlViewHomePlans_m_btnNext", "css:finder"],
+        ["xpath=//input[@id='m_ctlViewHomePlans_m_btnNext']", "xpath:attributes"],
+        ["xpath=//div[@id='m_ctlViewHomePlans_m_pnlSearchResults']/table/tbody/tr[3]/td/table/tbody/tr/td[4]/input", "xpath:idRelative"],
+        ["xpath=//td[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d8c5d6fb-9546-4a69-86f3-4310622b8266",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=tr:nth-child(1) > td:nth-child(1) > a > span:nth-child(3)",
+      "targets": [
+        ["css=tr:nth-child(1) > td:nth-child(1) > a > span:nth-child(3)", "css:finder"],
+        ["xpath=//table[@id='m_ctlViewHomePlans_m_rptrHomePlans__ctl3_m_tblHomePlans']/tbody/tr/td/a/span[2]", "xpath:idRelative"],
+        ["xpath=//span[2]", "xpath:position"]
+      ],
+      "value": "plan0"
+    }, {
+      "id": "f9bbb202-4ae9-4996-a64f-243619403108",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=tr:nth-child(1) > td:nth-child(2) span:nth-child(3)",
+      "targets": [
+        ["css=tr:nth-child(1) > td:nth-child(2) span:nth-child(3)", "css:finder"],
+        ["xpath=//table[@id='m_ctlViewHomePlans_m_rptrHomePlans__ctl3_m_tblHomePlans']/tbody/tr/td[2]/a/span[2]", "xpath:idRelative"],
+        ["xpath=//td[2]/a/span[2]", "xpath:position"]
+      ],
+      "value": "plan1"
+    }, {
+      "id": "80f858fd-b7cd-4d58-b3ea-8cce7641fefc",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=tr:nth-child(1) > td:nth-child(3) span:nth-child(3)",
+      "targets": [
+        ["css=tr:nth-child(1) > td:nth-child(3) span:nth-child(3)", "css:finder"],
+        ["xpath=//table[@id='m_ctlViewHomePlans_m_rptrHomePlans__ctl3_m_tblHomePlans']/tbody/tr/td[3]/a/span[2]", "xpath:idRelative"],
+        ["xpath=//td[3]/a/span[2]", "xpath:position"]
+      ],
+      "value": "plan2"
+    }, {
+      "id": "6a28c75c-a6e9-4a69-a73f-661eb6192a95",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=tr:nth-child(2) > td:nth-child(1) > a > span:nth-child(3)",
+      "targets": [
+        ["css=tr:nth-child(2) > td:nth-child(1) > a > span:nth-child(3)", "css:finder"],
+        ["xpath=//table[@id='m_ctlViewHomePlans_m_rptrHomePlans__ctl3_m_tblHomePlans']/tbody/tr[2]/td/a/span[2]", "xpath:idRelative"],
+        ["xpath=//tr[2]/td/a/span[2]", "xpath:position"]
+      ],
+      "value": "plan3"
+    }, {
+      "id": "6d000b51-ce50-4da7-933e-c9d5b18ccea8",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=tr:nth-child(2) > td:nth-child(2) span:nth-child(3)",
+      "targets": [
+        ["css=tr:nth-child(2) > td:nth-child(2) span:nth-child(3)", "css:finder"],
+        ["xpath=//table[@id='m_ctlViewHomePlans_m_rptrHomePlans__ctl3_m_tblHomePlans']/tbody/tr[2]/td[2]/a/span[2]", "xpath:idRelative"],
+        ["xpath=//tr[2]/td[2]/a/span[2]", "xpath:position"]
+      ],
+      "value": "plan4"
+    }, {
+      "id": "496c45b6-6d5b-4b39-a00f-0bc4045a72fc",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=tr:nth-child(2) > td:nth-child(3) span:nth-child(3)",
+      "targets": [
+        ["css=tr:nth-child(2) > td:nth-child(3) span:nth-child(3)", "css:finder"],
+        ["xpath=//table[@id='m_ctlViewHomePlans_m_rptrHomePlans__ctl3_m_tblHomePlans']/tbody/tr[2]/td[3]/a/span[2]", "xpath:idRelative"],
+        ["xpath=//tr[2]/td[3]/a/span[2]", "xpath:position"]
+      ],
+      "value": "plan5"
+    }, {
+      "id": "2eeb8b0d-1009-4930-8368-641f41c2873e",
+      "comment": "",
+      "command": "echo",
+      "target": "${plan0} ${plan1} ${plan2} ${plan3} ${plan4} ${plan5}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ae3b8390-36b5-4006-ba78-c7750ac98584",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b62c908d-7396-44a4-b72e-d72a63a14fb5",
+      "comment": "",
+      "command": "pause",
+      "target": "javascript{Math.random()*5000}",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "bbb2ca21-af38-4b35-b9fd-422fc347cfe1",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["d13f3011-1257-4344-a965-3d8f82c2babb"]
+  }],
+  "urls": ["http://www.ultimateplans.com/"],
+  "plugins": []
+}
